@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<!-- bootstrap angularJS using this module -->
+<html>
+<head>
+    <!-- IMPORT LIB -->
+    <script src="lib/angular.js"></script>
+    <script src="controller/controller.js"></script>
+    <script src="controller/StringService.js"></script>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    
+     <title>Controllers</title>
+    <meta charset="utf-8" />
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <!-- TITLE AND DESCRIPTION -->
+        <h1>Create custom service in AngularJS</h1>
+        <h2>&nbsp;&nbsp;- service: adds a space to camel case strings (example)</h2>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;- before: AmericoTomas</h5>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;- after: Americo Tomas</h5>
+
+            <!-- TABLE -->
+            <table>
+                <tr>
+                    <td>Your String</td>
+                    <td><input type="text" ng-model="input" /></td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td><input type="text" ng-model="output" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" ng-click="transformString(input)" value="Process String" />
+                    </td>
+                </tr>
+            </table>
+</div>
+</body>
+</html>

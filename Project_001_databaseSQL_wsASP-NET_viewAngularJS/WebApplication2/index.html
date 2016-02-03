@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<!-- bootstrap angularJS using this module -->
+<html>
+<head>
+    <!-- IMPORT LIB -->
+    <script src="lib/angular.js"></script>
+    <script src="controller/controller.js"></script>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+
+    <title>Controllers</title>
+    <meta charset="utf-8" />
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController" style="font-family:'Arial Nova'">
+        <h3>Consuming ASP NET Web Service in AngularJS using $http</h3>
+        <h5>&nbsp;&nbsp;- From Microsoft SQL Table </h5>
+        <h5>&nbsp;&nbsp;- Using a WS ASP.NET </h5>
+        <h5>&nbsp;&nbsp;- Showing in a view using AngularJS </h5>
+
+        <table>
+           <thead>
+               <tr>
+                   <th>Id</th>
+                   <th>Name</th>
+                   <th>Gender</th>
+                   <th>Salary</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr ng-repeat="employee in employees">
+                   <td>{{ employee.id }}</td>
+                   <td>{{ employee.name }}</td>
+                   <td>{{ employee.gender }}</td>
+                   <td>{{ employee.salary }}</td>
+               </tr>
+           </tbody>
+       </table>
+    </div>
+</body>
+</html>

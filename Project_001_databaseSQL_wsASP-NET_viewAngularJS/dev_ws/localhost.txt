@@ -1,0 +1,2 @@
+//CHECK WS
+http://localhost:51013/EmployeeService.asmx/GetAllEmployees
